@@ -5,19 +5,10 @@ msgstr "Project-Id-Version: tygh\n"
 "Language: en_US\n"
 
 msgctxt "Addons::name::departments"
-msgid "My addon name"
-msgstr "My addon name"
+msgid "Departments"
+msgstr "Departments"
 
 msgctxt "Addons::description::departments"
-msgid "My addon description"
-msgstr "My addon description"
-
-msgctxt "SettingsOptions::departments::my_setting"
-msgid "My addon setting"
-msgstr "My addon setting"
-
-msgctxt "Languages::departments.my_variable"
-msgid "Custom addon variable"
-msgstr "Custom addon variable"
-
+msgid "Provides department management functionality"
+msgstr "Provides department management functionality"
 
