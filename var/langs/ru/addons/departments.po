@@ -1,70 +1,70 @@
 msgid ""
 msgstr "Project-Id-Version: tygh"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Language-Team: English\n"
-"Language: en_US\n"
+"Language-Team: Russian\n"
+"Language: ru_RU\n"
 
 msgctxt "LanguageName"
 msgid "Localized language name"
-msgstr "English"
+msgstr "Russian"
 
 msgctxt "Addons::name::departments"
 msgid "Departments"
-msgstr "Departments"
+msgstr "Отделы"
 
 msgctxt "Addons::description::departments"
 msgid "Allows you to control departments."
-msgstr "Allows you to control departments."
+msgstr "Позволяет работать с отделами."
 
 msgctxt "Languages::departments_menu_description"
 msgid "Allows you to control departments."
-msgstr "Allows you to control departments."
+msgstr "Позволяет работать с отделами."
 
 msgctxt "Languages::department"
 msgid "Department"
-msgstr "Department"
+msgstr "Отдел"
 
 msgctxt "Languages::departments"
 msgid "Departments"
-msgstr "Departments"
+msgstr "Отделы"
 
 msgctxt "Languages::add_department"
 msgid "Add department"
-msgstr "Add department"
+msgstr "Добавить отдел"
 
 msgctxt "Languages::departments.new_department"
 msgid "New department"
-msgstr "New department"
+msgstr "Новый отдел"
 
 msgctxt "Languages::departments.supervisor"
 msgid "Supervisor"
-msgstr "Supervisor"
+msgstr "Руководитель"
 
 msgctxt "Languages::departments.select_supervisor"
 msgid "Select supervisor"
-msgstr "Select supervisor"
+msgstr "Выберите руководителя"
 
 msgctxt "Languages::departments.employees"
 msgid "Employees"
-msgstr "Employees"
+msgstr "Сотрудники"
 
 msgctxt "Languages::departments.add_employees"
 msgid "Add employees"
-msgstr "Add employees"
+msgstr "Добавить сотрудников"
 
 msgctxt "Languages::departments.upd_date"
 msgid "Update date"
-msgstr "Update date"
+msgstr "Дата обновления"
 
 msgctxt "Languages::departments.no_employees_defined"
 msgid "No employees defined"
-msgstr "No employees defined"
+msgstr "Сотрудники не заданы"
 
 msgctxt "Languages::departments.title"
 msgid "Departments"
-msgstr "Departments"
+msgstr "Отделы"
 
 msgctxt "Languages::departments.departments_not_found"
 msgid "Departments not found"
-msgstr "Departments not found"
+msgstr "Отделы не найдены"
 
