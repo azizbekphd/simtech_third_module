@@ -4,11 +4,11 @@ use Tygh\Registry;
 use Tygh\Enum\YesNo;
 use Tygh\Enum\UsergroupTypes;
 
-if (isset($_REQUEST["for_departments"])) {
+if (isset($_REQUEST['for_departments'])) {
 
     $auth = & Tygh::$app['session']['auth'];
     
-    if ($mode == "picker") {
+    if ($mode === 'picker') {
         $params = $_REQUEST;
         $params['skip_view'] = YesNo::YES;
     

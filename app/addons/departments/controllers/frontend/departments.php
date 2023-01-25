@@ -29,7 +29,7 @@ if ($mode === 'view') {
         'columns' => $columns
     ]);
 
-    fn_add_breadcrumb(__("departments.title"));
+    fn_add_breadcrumb(__('departments.title'));
 
 } elseif ($mode === 'details') {
 
@@ -41,7 +41,7 @@ if ($mode === 'view') {
 
     Tygh::$app['view']->assign('department', $department);
 
-    fn_add_breadcrumb(__("departments.title"), "?dispatch=departments.view");
-    fn_add_breadcrumb($department["name"]);
+    fn_add_breadcrumb(__('departments.title'), '?dispatch=departments.view');
+    fn_add_breadcrumb($department['name']);
 }
 
