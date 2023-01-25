@@ -4,7 +4,7 @@ use Tygh\Registry;
 
 if (!defined('BOOTSTRAP')) { die('Access denied'); }
 
-if ($_SERVER['REQUEST_METHOD']	=== 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     fn_trusted_vars('departments', 'department_data');
     $suffix = '';

@@ -93,7 +93,7 @@ function fn_get_departments($params = [], $lang_code = CART_LANGUAGE, $items_per
         foreach ($departments as &$department) {
             $department['main_pair'] = fn_get_image_pairs($department['department_image_id'],
                 'department_logos', ImagePairTypes::MAIN, true, false, $lang_code);
-            if (AREA != SiteArea::STOREFRONT) continue;
+            if (AREA !== SiteArea::STOREFRONT) continue;
             $department['supervisor_data'] = !empty($department['supervisor_id']) ?
                 fn_get_user_short_info($department['supervisor_id']) : [];
         }
