@@ -23,9 +23,11 @@ if ($mode === 'view') {
         Registry::get('settings.Appearance.products_per_page'));
     $columns = 3;
 
-    Tygh::$app['view']->assign('departments', $departments);
-    Tygh::$app['view']->assign('search', $search);
-    Tygh::$app['view']->assign('columns', $columns);
+    Tygh::$app['view']->assign([
+        'departments' => $departments,
+        'search' => $search,
+        'columns' => $columns
+    ]);
 
     fn_add_breadcrumb(__("departments.title"));
 

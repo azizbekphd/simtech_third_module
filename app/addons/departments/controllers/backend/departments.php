@@ -43,8 +43,10 @@ if ($_SERVER['REQUEST_METHOD']	=== 'POST') {
             if (isset($_REQUEST['redirect_url'])) {
                 $redirect_url = $_REQUEST['redirect_url'];
             }
-            Tygh::$app['ajax']->assign('force_redirection', $redirect_url);
-            Tygh::$app['ajax']->assign('non_ajax_notifications', true);
+            Tygh::$app['ajax']->assign([
+                'force_redirection' => $redirect_url,
+                'non_ajax_notifications' => true,
+            ]);
             return [CONTROLLER_STATUS_NO_CONTENT];
         }
     }
