@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($mode === 'update') {
         $department_id = fn_departments_update_department($_REQUEST['department_data'], $_REQUEST['department_id'], DESCR_SL);
 
-        $suffix = '.update?department_id=$department_id';
+        $suffix = '.update?department_id=' . $department_id;
     }
 
     if ($mode === 'delete') {

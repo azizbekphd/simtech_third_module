@@ -9,8 +9,8 @@
         {$c_url=$config.current_url|fn_query_remove:"sort_by":"sort_order"}
 
         {$rev=$smarty.request.content_id|default:"pagination_contents_departments"}
-        {include_ext "common/icon.tpl" class="icon-`$search.sort_order_rev`" assign=c_icon}
-        {include_ext "common/icon.tpl" class="icon-dummy" assign=c_dummy}
+        {include_ext file="common/icon.tpl" class="icon-`$search.sort_order_rev`" assign=c_icon}
+        {include_ext file="common/icon.tpl" class="icon-dummy" assign=c_dummy}
         {$department_statuses=""|fn_get_default_statuses:true}
         {$has_permission = fn_check_permissions("departments", "update_status", "admin", "POST")}
         {$image_width = $settings.Thumbnails.product_admin_mini_icon_width}

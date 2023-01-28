@@ -77,7 +77,7 @@ function fn_get_departments($params = [], $lang_code = CART_LANGUAGE, $items_per
 
     if (!empty($params['items_per_page'])) {
         $params['total_items'] = db_get_field('SELECT COUNT(*) FROM ?:departments ' .
-            '$join WHERE 1 $condition');
+            $join . ' WHERE 1 ' . $condition);
         $limit = db_paginate($params['page'], $params['items_per_page'],
             $params['total_items']);
     }
@@ -136,7 +136,7 @@ function fn_get_department_data($department_id, $lang_code = CART_LANGUAGE)
     $condition = db_quote('WHERE ?:departments.department_id = ?i', $department_id);
 
     $department = db_get_row('SELECT ' . implode(', ', $fields) .
-        ' FROM ?:departments ' . implode(' ', $joins) .' $condition');
+        ' FROM ?:departments ' . implode(' ', $joins) . ' ' . $condition);
 
     if (!empty($department)) {
         $department['main_pair'] = fn_get_image_pairs($department['department_image_id'],
